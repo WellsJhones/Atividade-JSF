@@ -1,0 +1,86 @@
+/* Style for the entire list */
+.form-container {
+	
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Changes font */
+    background-color: #f9f9f9; /* Light background for the list */
+    border: 1px solid #ddd; /* Border around the list */
+    border-radius: 8px; /* Smooth corners */
+    max-width: 300px; /* Restrict list width */
+    padding: 10px;
+}
+
+/* Style for each list item */
+ul li {
+    padding: 8px;
+    margin-bottom: 6px;
+    background-color: #e6f7ff; /* Light blue background for items */
+    border: 1px solid #b3daff; /* Soft border for items */
+    border-radius: 4px; /* Smooth corners */
+    color: #333; /* Text color */
+    font-size: 14px;
+    transition: transform 0.3s; /* Adds animation for hover */
+}
+
+/* Hover effect on list items */
+ul li:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    background-color: #cceeff; /* Slightly darker blue on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Optional: Style for the header above the list */
+h3 {
+    font-family: Arial, sans-serif;
+    color: #444;
+    margin-bottom: 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
