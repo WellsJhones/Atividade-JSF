@@ -1,0 +1,46 @@
+package br.com.cadUser;
+
+import java.util.ArrayList;
+
+public class Pessoa {
+	private String atributoNome; // Atributo privado do tipo String
+    private ArrayList<String> listaNomes; // Atributo privado do tipo ArrayList<String>
+
+    // Construtor
+    public Pessoa() {
+        listaNomes = new ArrayList<>(); // Inicializando o ArrayList
+    }
+
+    // Getter para o atributoNome
+    public String getAtributoNome() {
+        return atributoNome;
+    }
+
+    // Setter para o atributoNome
+    public void setAtributoNome(String atributoNome) {
+        this.atributoNome = atributoNome;
+    }
+
+    // Getter para a listaNomes
+    public ArrayList<String> getListaNomes() {
+        return listaNomes;
+    }
+
+    // Setter para a listaNomes
+    public void setListaNomes(ArrayList<String> listaNomes) {
+        this.listaNomes = listaNomes;
+    }
+
+    // Método para adicionar um nome à lista
+    public void adicionarNome(String nome) {
+        listaNomes.add(nome);
+    }
+
+    // Método para exibir os nomes da lista
+    public void exibirNomes() {
+        for (String nome : listaNomes) {
+            System.out.println(nome);
+        }
+    }
+
+}
