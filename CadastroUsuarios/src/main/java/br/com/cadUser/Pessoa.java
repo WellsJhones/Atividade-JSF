@@ -9,7 +9,7 @@ import jakarta.inject.Named;
 
 @SuppressWarnings("deprecation")
 @Named
-@RequestScoped
+@javax.faces.bean.RequestScoped
 @ManagedBean
 public class Pessoa {
 	private String nome;
