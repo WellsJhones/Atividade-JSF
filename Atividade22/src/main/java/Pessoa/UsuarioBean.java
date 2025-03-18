@@ -51,8 +51,11 @@ import javax.faces.bean.ManagedBean;
 
 	    // Action Method
 	    public String submit() {
-	        output = "Cadastro realizado: " + nome + " " + sobrenome + ", Fone: " + fone + ", E-mail: " + email;
+	        output = "Obrigado por se cadastrar, " + nome + " " + sobrenome +
+	                 "! Seus dados estão seguros conosco: Telefone - " + fone + 
+	                 ", E-mail - " + email + ". Seja bem-vindo!";
 	        return null; // Stay on the same page
 	    }
-	}
+
+}
 

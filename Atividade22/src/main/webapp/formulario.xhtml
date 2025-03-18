@@ -4,35 +4,41 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
 <h:head>
     <title>Cadastro de Usuários</title>
+     <link rel="stylesheet" href="./resourses/style/style.css" />
 </h:head>
 <h:body>
-    <h:form>
-        <!-- Nome -->
-        <h:outputLabel for="nome" value="Nome: " />
-        <h:inputText id="nome" value="#{usuarioBean.nome}" />
-        <br/><br/>
+    <div class="form-container">
+        <h:form>
+            <div class="form-group">
+                <h:outputLabel for="nome" value="Nome:" />
+                <h:inputText id="nome" value="#{usuarioBean.nome}" />
+            </div>
 
-        <!-- Sobrenome -->
-        <h:outputLabel for="sobrenome" value="Sobrenome: " />
-        <h:inputText id="sobrenome" value="#{usuarioBean.sobrenome}" />
-        <br/><br/>
+            <div class="form-group">
+                <h:outputLabel for="sobrenome" value="Sobrenome:" />
+                <h:inputText id="sobrenome" value="#{usuarioBean.sobrenome}" />
+            </div>
 
-        <!-- Fone -->
-        <h:outputLabel for="fone" value="Fone: " />
-        <h:inputText id="fone" value="#{usuarioBean.fone}" />
-        <br/><br/>
+            <div class="form-group">
+                <h:outputLabel for="fone" value="Fone:" />
+                <h:inputText id="fone" value="#{usuarioBean.fone}" />
+            </div>
 
-        <!-- E-mail -->
-        <h:outputLabel for="email" value="E-mail: " />
-        <h:inputText id="email" value="#{usuarioBean.email}" />
-        <br/><br/>
+            <div class="form-group">
+                <h:outputLabel for="email" value="E-mail:" />
+                <h:inputText id="email" value="#{usuarioBean.email}" />
+            </div>
+            <br />
 
-        <!-- Submit Button -->
-        <h:commandButton value="Enviar" action="#{usuarioBean.submit}" />
-        <br/><br/>
+            <!-- Output Text -->
+            <h:outputText id="outputBox" value="#{usuarioBean.output}" class="output-text" />
+            <br />
 
-        <!-- Output -->
-        <h:outputText value="#{usuarioBean.output}" />
-    </h:form>
+            <!-- Submit Button -->
+            <h:commandButton value="Enviar" action="#{usuarioBean.submit}" 
+                class="submit-button"  />
+        </h:form>
+    </div>
+
 </h:body>
 </html>
